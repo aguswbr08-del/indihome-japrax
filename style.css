@@ -1,0 +1,518 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: rgb(255, 68, 27);
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: rgba(107, 0, 0, 0.947);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: red;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: linear-gradient(to right, red, darkred);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: white;
+    color: red;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.paket-section {
+    padding: 60px 20px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.paket-section h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.paket-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.paket-card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.paket-card h3 {
+    color: red;
+    font-size: 22px;
+}
+
+.harga {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-paket {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.form-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#form-daftar {
+    max-width: 400px;
+    margin: auto;
+}
+
+#form-daftar input,
+#form-daftar button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#form-daftar button {
+    background: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* HERO */
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* PAKET */
+    .paket-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paket-card {
+        width: 90%;
+    }
+
+    /* FORM */
+    #form-daftar {
+        width: 90%;
+    }
+}
+
+.paket-table {
+    padding: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #e60023;
+    color: white;
+}
+
+/* PROMO */
+.promo {
+    padding: 50px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.paket-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.paket-card {
+    background: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.paket-card h3 {
+    color: #e60023;
+}
+
+.harga {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.btn-paket {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e60023;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+
+/* PROMO PREMIUM */
+.promo-premium {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #e60023, #b0001a);
+    color: white;
+    text-align: center;
+}
+
+.subjudul {
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.paket-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.paket-box {
+    background: white;
+    color: #333;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.paket-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.3);
+}
+
+.paket-box h2 {
+    color: #e60023;
+    margin: 10px 0;
+}
+
+.paket-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.paket-box ul li {
+    margin: 8px 0;
+}
+
+.harga {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-daftar {
+    display: inline-block;
+    background: #e60023;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #333;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.badge.populer {
+    background: gold;
+    color: black;
+}
+
+.paket-box.populer {
+    transform: scale(1.05);
+    border: 3px solid gold;
+}
+.fitur {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.fitur li {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+/* ANIMASI */
+.animate {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.animate:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.animate:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.animate:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FLOATING WHATSAPP */
+.wa-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 999;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.wa-float:hover {
+    transform: scale(1.1);
+}
+/* KONTAK */
+.kontak {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.kontak p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.kontak-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.kontak-item {
+    width: 140px;
+    height: 140px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+.kontak-item span {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.kontak-item:hover {
+    transform: translateY(-10px);
+}
+
+/* WARNA KHUSUS */
+.kontak-item.wa {
+    color: #25D366;
+}
+
+.kontak-item.fb {
+    color: #1877F2;
+}
+
+.kontak-item.ig {
+    color: #E1306C;
+}
+
+/* KONTAK PROFESIONAL */
+.kontak-pro {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e60023, #b0001a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.kontak-card {
+    background: white;
+    max-width: 420px;
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.logo-indihome {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.kontak-card h2 {
+    color: #e60023;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.kontak-sosial {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sosial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.sosial:hover {
+    transform: scale(1.05);
+}
+
+/* WARNA SOSIAL */
+.sosial.wa {
+    background: #4bd325;
+}
+
+.sosial.fb {
+    background: #1877F2;
+}
+
+.sosial.ig {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
